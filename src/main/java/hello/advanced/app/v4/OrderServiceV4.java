@@ -1,6 +1,5 @@
 package hello.advanced.app.v4;
 
-import hello.advanced.app.v3.OrderRepositoryV3;
 import hello.advanced.trace.logTrace.LogTrace;
 import hello.advanced.trace.template.AbstractTemplate;
 import lombok.RequiredArgsConstructor;
@@ -10,7 +9,7 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class OrderServiceV4 {
 
-    private final OrderRepositoryV3 orderRepository;
+    private final OrderRepositoryV4 orderRepository;
     private final LogTrace trace;
 
     public void orderItem(String itemId) {
